@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package protobuf;
+
+option go_package = "github.com/mmnavarr/grpc-poc/protos";
+
+// The Service A definition.
+service ServiceA {
+  // Sends a hello
+  rpc SayHello (SayHelloRequest) returns (SayHelloResponse) {}
+  rpc FetchNames (FetchNamesRequest) returns (stream FetchNamesResponse) {}
+}
+
+// The request message containing the user's name.
+message SayHelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message SayHelloResponse {
+  string message = 1;
+}
+
+message FetchNamesRequest {
+  int32 id = 1;
+}
+
+message FetchNamesResponse {
+  string result = 1;
+}

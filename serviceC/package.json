@@ -1,0 +1,26 @@
+{
+  "name": "ts-ws-client",
+  "version": "1.0.0",
+  "description": "A websocket (ws) client running on a HTTP server built with TS & NodeJS.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "grpc": "1.24.10",
+    "ts-node": "^9.0.0"
+  }
+}

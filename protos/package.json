@@ -1,0 +1,11 @@
+{
+  "name": "protos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "grpc": "1.24.10",
+    "grpc-tools": "1.11.1",
+    "grpc_tools_node_protoc_ts": "5.2.2"
+  }
+}
