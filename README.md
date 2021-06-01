@@ -25,7 +25,7 @@ Make sure `protoc-gen-go` added in PATH
 
 ## Generate Golang protobuf definitions
 
-In the `protos/ directory, run:
+In the `protos/`s directory, run:
 
 ```bash
 make gen_golang
@@ -37,7 +37,7 @@ This should create the definitions in the `golang/proto/` dir
 
 #### Start the Server (Service A)
 
-In the `serviceA/ directory, run:
+In the `serviceA/` directory, run:
 
 ```bash
 go run cmd/server.go
@@ -45,7 +45,7 @@ go run cmd/server.go
 
 #### Start the Client (Service B) in another terminal
 
-In the `serviceB/ directory, run:
+In the `serviceB/` directory, run:
 
 ```bash
 go run cmd/server.go
@@ -80,3 +80,4 @@ Client output:
 
 1. Generate golang protobuf defs straight in `golang/` without being nested into `/proto`
 2. Resolve credentials error in TS service trying to connect to Service A
+3. Add Mutual TLS to secure gRPC connections
